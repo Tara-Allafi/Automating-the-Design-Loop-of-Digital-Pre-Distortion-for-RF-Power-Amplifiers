@@ -1,0 +1,29 @@
+{
+  "n_eval": 32000,
+  "pin_dbm": 12.19,
+  "fit_dataset": "LSTM_train",
+  "ka_la": [
+    7,
+    5
+  ],
+  "results": [
+    {
+      "label": "no DPD",
+      "nmse_db": -27.356040518914515,
+      "acpr_db": -35.60982919183599,
+      "mean_pout_dbm": 27.555803024806707
+    },
+    {
+      "label": "memory polynomial (7,5)",
+      "nmse_db": -40.081527700562994,
+      "acpr_db": -52.62740668858322,
+      "mean_pout_dbm": 27.536990577431823
+    },
+    {
+      "label": "LSTM (32 hidden)",
+      "nmse_db": -43.39808775569102,
+      "acpr_db": -53.03233997998952,
+      "mean_pout_dbm": 27.537783531997267
+    }
+  ]
+}

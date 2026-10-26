@@ -1,0 +1,31 @@
+{
+  "config": {
+    "dataset": "LSTM_train",
+    "max_samples": 0,
+    "seq_len": 128,
+    "stride": 32,
+    "warmup": 16,
+    "hidden": 32,
+    "layers": 1,
+    "lr": 0.001,
+    "batch_size": 64,
+    "epochs": 1000,
+    "patience": 20,
+    "clip": 1.0,
+    "seed": 0,
+    "train_frac": 0.7,
+    "val_frac": 0.15,
+    "device": "cuda",
+    "tag": "lstm_inverse"
+  },
+  "direction": "post-inverse (y -> x)",
+  "preproc": {
+    "lag": 0,
+    "gain_abs": 5.8620384285671845,
+    "gain_deg": -100.52748643581414,
+    "scale_x": 4.275757260124438,
+    "scale_y": 3.8978114736585328
+  },
+  "best_epoch": 167,
+  "best_val_nmse_db": -46.634300231933594
+}

@@ -1,0 +1,8 @@
+# ADS drops these into whatever directory it is started from
+de_sim.cfg
+hpeesofsim.cfg
+
+.venv
+__pycache__/
+*.pyc
+plots/
