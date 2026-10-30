@@ -21,7 +21,7 @@ import keysight.ads.dataset as dataset
 # ===========================================================================
 # CONFIG
 # ===========================================================================
-WORKSPACE = Path(__file__).resolve().parent.parent / "ADS_workspace"
+WORKSPACE = Path(__file__).resolve().parent / "ADS_workspace"
 DATA = WORKSPACE / "data"        # ADS resolves modfile() names against this
 LIB = "DPA_simulation_lib"
 

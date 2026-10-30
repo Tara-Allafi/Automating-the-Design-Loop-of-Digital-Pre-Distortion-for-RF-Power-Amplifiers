@@ -40,7 +40,7 @@ No path in this repo is tied to one machine. You need:
    finds it from `$HPEESOF_DIR` or the `ads` command on your PATH; otherwise
    set `ADS_HOME=/path/to/ADS`.
 2. **The `MA_RFP_ADS_v1p8` design kit**, copied to
-   `../ADS_workspace/MA_RFP_ADS_v1p8/`. It is licensed, so it is not in the
+   `ADS_workspace/MA_RFP_ADS_v1p8/`. It is licensed, so it is not in the
    repo.
 3. **The Python environment and the LTE stimulus**, set up once:
 
@@ -49,7 +49,7 @@ No path in this repo is tied to one machine. You need:
    ```
 
    This also unpacks the stimulus `LTE_DL_7p68MSPS_5M_SR_122.88.txt` (67 MB),
-   committed xz-compressed in `../ADS_workspace/data/`.
+   committed xz-compressed in `ADS_workspace/data/`.
 
    It reuses the keysight bindings, numpy, scipy, pandas and matplotlib that
    ADS ships, and adds only what `requirements.txt` lists. To use an existing

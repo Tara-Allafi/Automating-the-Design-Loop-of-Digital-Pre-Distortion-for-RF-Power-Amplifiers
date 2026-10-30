@@ -1,0 +1,92 @@
+; Top Design: "DPA_simulation_lib:DPA_AM_AM:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="DPA_simulation_lib:DPA_AM_AM:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+; Library Name: DPA_simulation_lib
+; Cell Name: DPA_design
+; View Name: schematic
+define DPA_design ( Input  Output  VD  VG_C  VG_M ) 
+;parameters 
+model MSub1 MSUB H=0.8128 mm Er=3.55 Mur=1 Cond=1.0E+50 Hu=1e+33 mm T=0.035 mm TanD=0.0021 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+MLIN2:TL1  Vin1 N__1 Subst="MSub1" W=0.96 mm L=18.4 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL2  Vin1 N__8 Subst="MSub1" W=0.96 mm L=18.4 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+R:R1  N__1 N__8 R=100 Ohm Noise=yes 
+R:R5  N__28 0 R=50 Ohm Noise=yes 
+C:C1  N__4 N__2 C=100 pF 
+MLIN2:TL3  N__1 N__4 Subst="MSub1" W=1.79 mm L=20.4 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+C:C2  N__8 N__7 C=100 pF 
+MTAPER:Taper1  N__11 N__2 Subst="MSub1" W1=2 mm W2=3.26 mm L=22.9 mm 
+MTAPER:Taper2  N__13 N__7 Subst="MSub1" W1=2 mm W2=3.26 mm L=22.9 mm 
+MLIN2:TL4  N__11 N__18 Subst="MSub1" W=5.2 mm L=20 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL5  N__18 N__5 Subst="MSub1" W=15 mm L=8.56 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL6  N__13 N__19 Subst="MSub1" W=5.2 mm L=20 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL7  N__19 N__12 Subst="MSub1" W=15 mm L=8.56 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL8  VG_M N__18 Subst="MSub1" W=1 mm L=19.25 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL9  N__19 VG_C Subst="MSub1" W=1 mm L=19.25 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+#uselib "MA_RFP_ADS_v1p8" , "CGH40010F_v2"
+"CGH40010F_v2":X1  N__5 N__25 0 t=25 rth=8 x1=1 x2=1 
+#uselib "MA_RFP_ADS_v1p8" , "CGH40010F_v2"
+"CGH40010F_v2":X2  N__12 N__14 0 t=25 rth=8 x1=1 x2=1 
+MLIN2:TL10  N__20 N__27 Subst="MSub1" W=1.9 mm L=10.2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL11  N__24 N__21 Subst="MSub1" W=1.9 mm L=10.2 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL12  N__27 N__23 Subst="MSub1" W=3.62 mm L=25.6 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL13  N__27 N__21 Subst="MSub1" W=2.64 mm L=20.1 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+MLIN2:TL14  VD N__27 Subst="MSub1" W=1 mm L=23 mm Wall1=2.5e+28 mm Wall2=2.5e+28 mm Mod=1 
+R:R2  0 N__5 R=100 Ohm Noise=yes 
+R:R3  N__12 0 R=100 Ohm Noise=yes 
+C:C3  0 N__21 C=1.5 pF 
+C:C4  0 N__27 C=1.5 pF 
+C:C5  N__23 N__29 C=100 pF 
+C:C6  0 VG_C C=100 uF 
+C:C7  0 VG_M C=100 uF 
+C:C8  0 VD C=100 uF 
+#uselib "ckt" , "Circulator"
+Circulator:CIR2  N__29 Output N__28 Loss1=0. dB Loss2=0. dB Loss3=0. dB Loss4=0. dB VSWR1=1. VSWR2=1. VSWR3=1. VSWR4=1. Isolat=100. dB CheckPassivity=1 
+Short:IDS_M  N__20 N__25 Mode=0 SaveCurrent=yes 
+Short:IDS_C  N__24 N__14 Mode=0 SaveCurrent=yes 
+#uselib "ckt" , "Circulator"
+Circulator:CIR1  Input Vin1 N__22 Loss1=0. dB Loss2=0. dB Loss3=0. dB Loss4=0. dB VSWR1=1. VSWR2=1. VSWR3=1. VSWR4=1. Isolat=100. dB CheckPassivity=1 
+R:R4  N__22 0 R=50 Ohm Noise=yes 
+end DPA_design
+
+model MSub1 MSUB H=0.8128 mm Er=3.55 Mur=1 Cond=1.0E+50 Hu=1e+33 mm T=0.035 mm TanD=0.0021 Rough=0 mm DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+#uselib "ckt" , "P_Probe"
+P_Probe:output_Power  N__5 N__9 
+HB:HB1 MaxOrder=4 Freq[1]=2 GHz Order[1]=5 StatusLevel=2 HBSS_WSP=0 SweepVar="Pin" SweepPlan="HB1_stim" OutputPlan="HB1_Output" 
+
+SweepPlan: HB1_stim Start=-30 Stop=34 Lin=541 
+
+OutputPlan:HB1_Output \
+      Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=no \
+      DeviceCurrentNestLevel=0 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=no \
+      DeviceVoltageNestLevel=0 \
+      DeviceVoltageDeviceType="All"
+
+Tran:HB1_tran HB_Sol=1 SteadyState=1 StatusLevel=3 \
+Freq[1]=2 GHz Order[1]=5 
+
+Component:tahb_HB1 Module="ATAHB" Type="ModelExtractor" \ 
+ Tran_Analysis="HB1_tran" HB_Analysis="HB1" 
+
+
+Pin=29
+DPA_design:X3  Vin N__5 N__3 N__2 N__8 
+Short:ILoad  N__9 Vout Mode=0 SaveCurrent=yes 
+V_Source:SRC6  N__2 0 Type="V_DC" Vdc=-5 V SaveCurrent=1 
+Port:PORT1  Vin 0 Num=1 Z=50 Ohm P[1]=polar(dbmtow(Pin),0) Freq[1]=2 GHz    Noise=yes Pac=polar(dbmtow(0),0) 
+Port:TermG2  Vout 0 Num=2 Z=50 Ohm Noise=yes 
+Short:ID  N__7 N__3 Mode=0 SaveCurrent=yes 
+V_Source:SRC7  N__7 0 Type="V_DC" Vdc=28 V SaveCurrent=1 
+V_Source:SRC8  N__8 0 Type="V_DC" Vdc=-3 V SaveCurrent=1 

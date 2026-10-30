@@ -38,7 +38,7 @@ if [[ "${1:-}" == "--setup" ]]; then
   "$ADS_PYTHON" -m venv --system-site-packages "$HERE/.venv"
   "$HERE/.venv/bin/python3" -m pip install -r "$HERE/requirements.txt"
   # The LTE stimulus is committed xz-compressed (67 MB -> 11 MB)
-  STIM="$HERE/../ADS_workspace/data/LTE_DL_7p68MSPS_5M_SR_122.88.txt"
+  STIM="$HERE/ADS_workspace/data/LTE_DL_7p68MSPS_5M_SR_122.88.txt"
   [[ -f "$STIM" ]] || xz -dk "$STIM.xz"
   exit 0
 fi

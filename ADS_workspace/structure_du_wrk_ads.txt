@@ -1,0 +1,913 @@
+.
+├── ADSlibconfig
+├── __auto_uploading_files.upl
+├── cds.lib
+├── cell_1.dds~
+├── data
+│   ├── dc_annotation
+│   │   ├── %D%P%A_simulation_lib_cell_1_schematic
+│   │   │   ├── annotation_1.xml
+│   │   │   ├── annotation_2.xml
+│   │   │   └── annotation_map.xml
+│   │   ├── %D%P%A_simulation_lib_cell_1_schematic_
+│   │   │   ├── annotation_1.xml
+│   │   │   └── annotation_map.xml
+│   │   ├── %D%P%A_simulation_lib_%D%P%A_%A%M_%A%M_schematic
+│   │   │   ├── annotation_1.xml
+│   │   │   ├── annotation_2.xml
+│   │   │   └── annotation_map.xml
+│   │   ├── %D%P%A_simulation_lib_%D%P%A_modulated_%T%B_schematic
+│   │   │   ├── annotation_1.xml
+│   │   │   ├── annotation_2.xml
+│   │   │   └── annotation_map.xml
+│   │   ├── %D%P%A_simulation_lib_%D%P%A_%Modulated_%T%B_schematic
+│   │   │   ├── annotation_1.xml
+│   │   │   └── annotation_map.xml
+│   │   ├── %D%P%A_simulation_lib_%D%P%D_%T%B_schematic
+│   │   │   ├── annotation_1.xml
+│   │   │   └── annotation_map.xml
+│   │   └── %D%P%A_simulation_lib_smal_signal_%T%B_schematic
+│   │       ├── annotation_1.xml
+│   │       └── annotation_map.xml
+│   ├── DPA_AM_AM_data
+│   │   └── logFile.txt
+│   ├── DPA_AM_AM.ds
+│   ├── DPA_AM_AM.hbs
+│   ├── DPA_Modulated_TB_data
+│   │   └── logFile.txt
+│   ├── DPA_Modulated_TB.ds
+│   ├── DPD_TB_data
+│   │   └── logFile.txt
+│   ├── DPD_TB.ds
+│   ├── LTE_DL_7p68MSPS_5M_SR_122.88.txt
+│   ├── predistorted_signalPredi_TRI_P2dB_DPA.txt
+│   ├── predistorted_signalPredi_TRI_P3dB_Ka11La2_DPA.zip
+│   ├── previous_predi_sig.zip
+│   ├── smal_signal_TB_data
+│   │   └── logFile.txt
+│   └── smal_signal_TB.ds
+├── dds.cfg
+├── de_sim.cfg
+├── DistributedSimConfig.xml
+├── DPA_AM_AM.dds
+├── DPA_AM_AM.dds~
+├── DPA_Modulated_TB.dds
+├── DPA_Modulated_TB.dds~
+├── DPA_simulation_lib
+│   ├── 1505_test
+│   │   └── schematic
+│   │       ├── master.tag
+│   │       └── sch.oa
+│   ├── cdsinfo.tag
+│   ├── %D%P%A_%A%M_%A%M
+│   │   └── schematic
+│   │       ├── master.tag
+│   │       └── sch.oa
+│   ├── %D%P%A_design
+│   │   ├── schematic
+│   │   │   ├── master.tag
+│   │   │   └── sch.oa
+│   │   └── symbol
+│   │       ├── master.tag
+│   │       ├── named.views
+│   │       └── symbol.oa
+│   ├── %D%P%A_%Modulated_%T%B
+│   │   ├── schematic
+│   │   │   ├── master.tag
+│   │   │   └── sch.oa
+│   │   └── schematic.broken
+│   │       ├── master.tag
+│   │       └── sch.oa
+│   ├── %D%P%D_%T%B
+│   │   └── schematic
+│   │       ├── master.tag
+│   │       └── sch.oa
+│   ├── eesof_lib.cfg
+│   ├── libRefs.json
+│   ├── modulated_%L%T%E_signal
+│   │   └── schematic
+│   │       ├── master.tag
+│   │       └── sch.oa
+│   ├── schematic.prf
+│   ├── smal_signal_%T%B
+│   │   └── schematic
+│   │       ├── master.tag
+│   │       └── sch.oa
+│   ├── source_simulation
+│   │   └── schematic
+│   │       ├── master.tag
+│   │       └── sch.oa
+│   └── tech.db
+├── DPA_simulation_lib_lay.prf
+├── DPD_TB.dds
+├── DPD_TB.dds~
+├── fileRefs.json
+├── hpeesofsim.cfg
+├── layout.prf
+├── lib.defs
+├── MA_RFP_ADS_v1p8
+│   ├── circuit
+│   │   ├── ael
+│   │   │   ├── MA_RFP_ADS_v1p8_encode_def.ael
+│   │   │   ├── MA_RFP_ADS_v1p8_encode_def.atf
+│   │   │   ├── MA_RFP_ADS_v1p8_encode_item.ael
+│   │   │   └── MA_RFP_ADS_v1p8_encode_item.atf
+│   │   ├── bitmaps
+│   │   │   ├── CG2H30070F_v2.bmp
+│   │   │   ├── CG2H40010F_v2.bmp
+│   │   │   ├── CG2H40025F_v2.bmp
+│   │   │   ├── CG2H40035FP_v1.bmp
+│   │   │   ├── CG2H40045F_v2.bmp
+│   │   │   ├── CG2H40120F_v2.bmp
+│   │   │   ├── CG2H80015D_v2.bmp
+│   │   │   ├── CG2H80030D_v2.bmp
+│   │   │   ├── CG2H80045D_v2.bmp
+│   │   │   ├── CG2H80060D_v2.bmp
+│   │   │   ├── CG2H80120D_v2.bmp
+│   │   │   ├── CGH09120F_v2.bmp
+│   │   │   ├── CGH21240F_v1.bmp
+│   │   │   ├── CGH25120F_v1.bmp
+│   │   │   ├── CGH27015F_v1.bmp
+│   │   │   ├── CGH27030F_v1.bmp
+│   │   │   ├── CGH27030S_v1.bmp
+│   │   │   ├── CGH27060F_v1.bmp
+│   │   │   ├── CGH31240F_v2.bmp
+│   │   │   ├── CGH35015F_v1.bmp
+│   │   │   ├── CGH35030F_v1.bmp
+│   │   │   ├── CGH35060F_v1.bmp
+│   │   │   ├── CGH35240F_v1.bmp
+│   │   │   ├── CGH40006P_v2.bmp
+│   │   │   ├── CGH40006S_v3.bmp
+│   │   │   ├── CGH40010F_v2.bmp
+│   │   │   ├── CGH40025F_v2.bmp
+│   │   │   ├── CGH40035F_v2.bmp
+│   │   │   ├── CGH40045F_v2.bmp
+│   │   │   ├── CGH40090PP_v1.bmp
+│   │   │   ├── CGH40120F_v2.bmp
+│   │   │   ├── CGH40180PP_V1.bmp
+│   │   │   ├── CGH55030F_v1.bmp
+│   │   │   ├── CGH60008D_v2.bmp
+│   │   │   ├── CGH60015D_v2.bmp
+│   │   │   ├── CGH60030D_v2.bmp
+│   │   │   ├── CGH60060D_v2.bmp
+│   │   │   ├── CGH60120D_v2.bmp
+│   │   │   ├── CGHV1420KF_v1.bmp
+│   │   │   ├── CGHV14250F_v2.bmp
+│   │   │   ├── CGHV14500F_v2.bmp
+│   │   │   ├── CGHV14800F1_v2.bmp
+│   │   │   ├── CGHV14800F_v1.bmp
+│   │   │   ├── CGHV1F006S_v3.bmp
+│   │   │   ├── CGHV1F025S_v3.bmp
+│   │   │   ├── CGHV1J006D_v2.bmp
+│   │   │   ├── CGHV1J025D_v2.bmp
+│   │   │   ├── CGHV1J070D_v2.bmp
+│   │   │   ├── CGHV27015S_v2.bmp
+│   │   │   ├── CGHV27030S_v2.bmp
+│   │   │   ├── CGHV27060MP_v2.bmp
+│   │   │   ├── CGHV31500F1_v1.bmp
+│   │   │   ├── CGHV31500F_v1.bmp
+│   │   │   ├── CGHV35060MP_v3.bmp
+│   │   │   ├── CGHV35120F_v1.bmp
+│   │   │   ├── CGHV35150F_v1.bmp
+│   │   │   ├── CGHV35400F1_v1.bmp
+│   │   │   ├── CGHV35400F_v3.bmp
+│   │   │   ├── CGHV37400F_v2.bmp
+│   │   │   ├── CGHV38375F_v1.bmp
+│   │   │   ├── CGHV40030FP_v1.bmp
+│   │   │   ├── CGHV40050F_v1.bmp
+│   │   │   ├── CGHV40100F_v2.bmp
+│   │   │   ├── CGHV40180FP_v1.bmp
+│   │   │   ├── CGHV40200P_v3.bmp
+│   │   │   ├── CGHV40320D_v1.bmp
+│   │   │   ├── CGHV50200F_v1.bmp
+│   │   │   ├── CGHV59070F_v1.bmp
+│   │   │   ├── CGHV59350F_v2.bmp
+│   │   │   ├── CGHV60015D_v1.bmp
+│   │   │   ├── CGHV60040D_v2.bmp
+│   │   │   ├── CGHV60075D_v2.bmp
+│   │   │   ├── CGHV60170D_v2.bmp
+│   │   │   ├── CGHV96050F2_v2.bmp
+│   │   │   ├── CGHV96100F2_v2.bmp
+│   │   │   ├── CMPA0527005F_v1.bmp
+│   │   │   ├── CMPA0530002S_V1.bmp
+│   │   │   ├── encoded.bmp
+│   │   │   ├── GTRA184602FC_v1.bmp
+│   │   │   ├── GTRA214602FC_v1.bmp
+│   │   │   ├── GTRA362002_v2.bmp
+│   │   │   ├── GTRA362802_v2.bmp
+│   │   │   ├── GTRA364002_v2.bmp
+│   │   │   ├── GTRA384802_v2.bmp
+│   │   │   ├── GTRA412852_v2.bmp
+│   │   │   ├── GTRB097152FC_V2.bmp
+│   │   │   ├── GTRB184402FC_V1.bmp
+│   │   │   ├── GTRB186002_v1.bmp
+│   │   │   ├── GTRB204402_v1.bmp
+│   │   │   ├── GTRB224402_v1.bmp
+│   │   │   ├── GTRB226002_v1.bmp
+│   │   │   ├── GTRB246608_v1.bmp
+│   │   │   ├── GTRB264318_v1.bmp
+│   │   │   ├── GTRB266908_v1.bmp
+│   │   │   ├── GTRB384608_v1.bmp
+│   │   │   ├── GTRB424908_v1.bmp
+│   │   │   ├── GTVA101K42_v2.bmp
+│   │   │   ├── GTVA107001_v2.bmp
+│   │   │   ├── GTVA126001_v2.bmp
+│   │   │   ├── GTVA261701_v2.bmp
+│   │   │   ├── GTVA262701_v2.bmp
+│   │   │   ├── GTVB222611FA_V1.bmp
+│   │   │   ├── MAPC-A1001_v1.bmp
+│   │   │   ├── MAPC-A1106_V1.bmp
+│   │   │   ├── MAPC-A1511_v1.bmp
+│   │   │   ├── MAPC-A1516_V2.bmp
+│   │   │   ├── MAPC-A3005-AB_v1.bmp
+│   │   │   ├── MAPC-A3006-AB_v2.bmp
+│   │   │   ├── MAPC-A3007-AB_V2.bmp
+│   │   │   ├── MAPC-A3009-AB_V2.bmp
+│   │   │   ├── MAPC_C18640_v1.bmp
+│   │   │   ├── MAPC_C22640_v1.bmp
+│   │   │   ├── MAPC_C27600_V1.bmp
+│   │   │   ├── WGC22630_V2.bmp
+│   │   │   ├── WGC40680_v1.bmp
+│   │   │   ├── WS1A2639P1_V1.bmp
+│   │   │   ├── WS1A3640P1_V1.bmp
+│   │   │   ├── WS1A3940P1_V1.bmp
+│   │   │   ├── WSGPA01_V1.bmp
+│   │   │   ├── WST33H0NC_V4.bmp
+│   │   │   ├── WST4050D_v1.bmp
+│   │   │   ├── WST4100D_v1.bmp
+│   │   │   ├── WST41H0D_v1.bmp
+│   │   │   ├── WST4200D_v1.bmp
+│   │   │   ├── WST4300D_v1.bmp
+│   │   │   └── WST4500D_v1.bmp
+│   │   ├── config
+│   │   │   └── ADSlibconfig
+│   │   ├── data
+│   │   │   ├── MA_RFP_ADS_v1p8_37400_IMN_OM.s17p
+│   │   │   ├── MA_RFP_ADS_v1p8_37400_OMN_OM.s17p
+│   │   │   ├── MA_RFP_ADS_v1p8_440293_EM_440293_EM2.s2p
+│   │   │   ├── MA_RFP_ADS_v1p8_BW_G_2.s4p
+│   │   │   ├── MA_RFP_ADS_v1p8_CG2H30070F_sNp_Block.s18p
+│   │   │   ├── MA_RFP_ADS_v1p8_CG2H40025_Package_440166_EM1.s5p
+│   │   │   ├── MA_RFP_ADS_v1p8_CG2H40035G166_HFSS_GateJustified_Corrected.s6p
+│   │   │   ├── MA_RFP_ADS_v1p8_CGH21240_Package_Input_Model.s2p
+│   │   │   ├── MA_RFP_ADS_v1p8_CGH21240_Package_Output_Model.s2p
+│   │   │   ├── MA_RFP_ADS_v1p8_CGH31240F_Input Networks.s3p
+│   │   │   ├── MA_RFP_ADS_v1p8_CGH31240F_Output Networks.s3p
+│   │   │   ├── MA_RFP_ADS_v1p8_CGH40006S_Block_A.s3p
+│   │   │   ├── MA_RFP_ADS_v1p8_CGH40006S_Block_B.s6p
+│   │   │   ├── MA_RFP_ADS_v1p8_CGH40006S_Block_C_new.s6p
+│   │   │   ├── MA_RFP_ADS_v1p8_CGH40035F_Leadframe.s4p
+│   │   │   ├── MA_RFP_ADS_v1p8_CGHV1420KF_V1_Passive.s13p
+│   │   │   ├── MA_RFP_ADS_v1p8_CGHV14800F1_v2_passives.s67p
+│   │   │   ├── MA_RFP_ADS_v1p8_CGHV31500F1_passive.s7p
+│   │   │   ├── MA_RFP_ADS_v1p8_CGHV31500F_passive.s7p
+│   │   │   ├── MA_RFP_ADS_v1p8_CGHV35060MP_V3_passives.s5p
+│   │   │   ├── MA_RFP_ADS_v1p8_CGHV35120F_Device_Passives_HFSS.s26p
+│   │   │   ├── MA_RFP_ADS_v1p8_CGHV38375_BW_G_2.s4p
+│   │   │   ├── MA_RFP_ADS_v1p8_CGHV38375F_Input_SP 1.s17p
+│   │   │   ├── MA_RFP_ADS_v1p8_CGHV38375F_Output_SP 1.s17p
+│   │   │   ├── MA_RFP_ADS_v1p8_CGHV50200F_IMN_S2P.s2p
+│   │   │   ├── MA_RFP_ADS_v1p8_CGHV50200F_OMN_S2P.s2p
+│   │   │   ├── MA_RFP_ADS_v1p8_CGHV59350_Block_A.s2p
+│   │   │   ├── MA_RFP_ADS_v1p8_CGHV59350_Block_B.s2p
+│   │   │   ├── MA_RFP_ADS_v1p8_CMPA0527005F_50v_imn_02.s4p
+│   │   │   ├── MA_RFP_ADS_v1p8_CMPA0527005F_drainfeed_01.s4p
+│   │   │   ├── MA_RFP_ADS_v1p8_CMPA0527005F_fb02.s2p
+│   │   │   ├── MA_RFP_ADS_v1p8_CMPA0527005F_gatefeed_01.s7p
+│   │   │   ├── MA_RFP_ADS_v1p8_CMPA0530002S_Product_Model_Passive_Rev2.s5p
+│   │   │   ├── MA_RFP_ADS_v1p8_GTRA184602FC_V1_Passive.s44p
+│   │   │   ├── MA_RFP_ADS_v1p8_GTRA214602FC_passive.s11p
+│   │   │   ├── MA_RFP_ADS_v1p8_GTRB097152FC_V2_passives.s23p
+│   │   │   ├── MA_RFP_ADS_v1p8_GTRB184402FC_V1.s26p
+│   │   │   ├── MA_RFP_ADS_v1p8_GTRB186002FC_V1_passive.s39p
+│   │   │   ├── MA_RFP_ADS_v1p8_GTRB204402FC_all_passives.s26p
+│   │   │   ├── MA_RFP_ADS_v1p8_GTRB224402FC_passive.s26p
+│   │   │   ├── MA_RFP_ADS_v1p8_GTRB226002FC_passive.s24p
+│   │   │   ├── MA_RFP_ADS_v1p8_GTRB246608FC_passives.s29p
+│   │   │   ├── MA_RFP_ADS_v1p8_GTRB264318_V1_passive.s12p
+│   │   │   ├── MA_RFP_ADS_v1p8_GTRB266908FC_Passive.s15p
+│   │   │   ├── MA_RFP_ADS_v1p8_GTRB384608FC_ZH_v2_model2_simplified_withlid2.s20p
+│   │   │   ├── MA_RFP_ADS_v1p8_GTRB424908FC_ZH_model1_withlid.s21p
+│   │   │   ├── MA_RFP_ADS_v1p8_GTVB222611FA_passives_V1.s13p
+│   │   │   ├── MA_RFP_ADS_v1p8_MAPC_A1001_v1_passives.s8p
+│   │   │   ├── MA_RFP_ADS_v1p8_MAPC_A1106_model_passives_V1.s16p
+│   │   │   ├── MA_RFP_ADS_v1p8_MAPC_A1511_v1_passives_HALF.s15p
+│   │   │   ├── MA_RFP_ADS_v1p8_MAPC_A1516_v2_passives.s41p
+│   │   │   ├── MA_RFP_ADS_v1p8_MAPC_C18640_DP_v1_Passives2.s26p
+│   │   │   ├── MA_RFP_ADS_v1p8_MAPC_C22640_DP_P2_v1_passives2.s11p
+│   │   │   ├── MA_RFP_ADS_v1p8_MAPC_C27600_v1_passives.s30p
+│   │   │   ├── MA_RFP_ADS_v1p8_PG_DFN_3x4_1_pod_package_bwangle.s4p
+│   │   │   ├── MA_RFP_ADS_v1p8_WGC22630_v2_passives.s33p
+│   │   │   ├── MA_RFP_ADS_v1p8_WGC40680_v1_passives.s30p
+│   │   │   ├── MA_RFP_ADS_v1p8_WS1A2639_passive.s14p
+│   │   │   ├── MA_RFP_ADS_v1p8_WS1A3640_passive.s15p
+│   │   │   ├── MA_RFP_ADS_v1p8_WS1A3940_passive.s15p
+│   │   │   ├── MA_RFP_ADS_v1p8_WST33H0NC_V4_passives.s37p
+│   │   │   ├── MA_RFP_ADS_v1p8_WST4050D_v1_passives.s4p
+│   │   │   ├── MA_RFP_ADS_v1p8_WST4050P_v1_passives.s6p
+│   │   │   ├── MA_RFP_ADS_v1p8_WST4100D_v1_passives.s4p
+│   │   │   ├── MA_RFP_ADS_v1p8_WST4100F_v2_passives.s6p
+│   │   │   ├── MA_RFP_ADS_v1p8_WST41H0D_v1_passives.s18p
+│   │   │   ├── MA_RFP_ADS_v1p8_WST4200D_v1_passives.s6p
+│   │   │   ├── MA_RFP_ADS_v1p8_WST4200F_SCH_v2_passives.s8p
+│   │   │   ├── MA_RFP_ADS_v1p8_WST4300D_v1_passives.s8p
+│   │   │   ├── MA_RFP_ADS_v1p8_WST4500D_V1_passives.s10p
+│   │   │   └── MA_RFP_ADS_v1p8_WST4500F_passives_v2.s9p
+│   │   ├── models
+│   │   │   ├── g28v4_r8u3.library
+│   │   │   ├── g28v5_r8u51_sc.library
+│   │   │   ├── g40v4_r8u1.library
+│   │   │   ├── g50v3d1_r8u5.library
+│   │   │   ├── g50v3d1_r8u6.library
+│   │   │   ├── g50v3d2_r8u1_core.library
+│   │   │   ├── g50v3d3.library
+│   │   │   ├── gan2p1_vp0.library
+│   │   │   ├── gan3a_v2p0.library
+│   │   │   ├── gan3c_v2p3.library
+│   │   │   ├── ma_gan_int_v3p3.library
+│   │   │   └── MA_RFP_ADS_v1p8.library
+│   │   └── records
+│   │       ├── MA_RFP_ADS_v1p8.ctl
+│   │       └── MA_RFP_ADS_v1p8.rec
+│   ├── de
+│   │   └── ael
+│   │       ├── boot.ael
+│   │       └── boot.atf
+│   ├── doc
+│   │   └── about.txt
+│   ├── for_editing_pdk.defs
+│   ├── lib.defs
+│   ├── MA_RFP_ADS_v1p8
+│   │   ├── %C%G2%H30070%F_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G2%H40010%F_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G2%H40025%F_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G2%H40035%F%P_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G2%H40045%F_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G2%H40120%F_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G2%H80015%D_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G2%H80030%D_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G2%H80045%D_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G2%H80060%D_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G2%H80120%D_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H09120%F_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H21240%F_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H25120%F_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H27015%F_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H27030%F_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H27030%S_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H27060%F_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H31240%F_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H35015%F_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H35030%F_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H35060%F_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H35240%F_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H40006%P_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H40006%S_v3
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H40010%F_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H40025%F_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H40035%F_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H40045%F_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H40090%P%P_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H40120%F_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H40180%P%P_%V1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H55030%F_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H60008%D_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H60015%D_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H60030%D_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H60060%D_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H60120%D_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V1420%K%F_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V14250%F_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V14500%F_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V14800%F1_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V14800%F_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V1%F006%S_v3
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V1%F025%S_v3
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V1%J006%D_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V1%J025%D_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V1%J070%D_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V27015%S_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V27030%S_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V27060%M%P_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V31500%F1_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V31500%F_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V35060%M%P_v3
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V35120%F_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V35150%F_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V35400%F1_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V35400%F_v3
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V37400%F_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V38375%F_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V40030%F%P_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V40050%F_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V40100%F_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V40180%F%P_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V40200%P_v3
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V40320%D_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V50200%F_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V59070%F_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V59350%F_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V60015%D_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V60040%D_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V60075%D_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V60170%D_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V96050%F2_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%G%H%V96100%F2_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %C%M%P%A0527005%F_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %C%M%P%A0530002%S_%V1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── eesof_lib.cfg
+│   │   ├── %G%T%R%A184602%F%C_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %G%T%R%A214602%F%C_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %G%T%R%A362002_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %G%T%R%A362802_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %G%T%R%A364002_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %G%T%R%A384802_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %G%T%R%A412852_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %G%T%R%B097152%F%C_%V2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %G%T%R%B184402%F%C_%V1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %G%T%R%B186002_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %G%T%R%B204402_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %G%T%R%B224402_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %G%T%R%B226002_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %G%T%R%B246608_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %G%T%R%B264318_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %G%T%R%B266908_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %G%T%R%B384608_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %G%T%R%B424908_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %G%T%V%A101%K42_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %G%T%V%A107001_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %G%T%V%A126001_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %G%T%V%A261701_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %G%T%V%A262701_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %G%T%V%B222611%F%A_%V1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %M%A%P%C#2d%A1001_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %M%A%P%C#2d%A1106_%V1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %M%A%P%C#2d%A1511_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %M%A%P%C#2d%A1516_%V2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %M%A%P%C#2d%A3005#2d%A%B_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %M%A%P%C#2d%A3006#2d%A%B_v2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %M%A%P%C#2d%A3007#2d%A%B_%V2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %M%A%P%C#2d%A3009#2d%A%B_%V2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %M%A%P%C_%C18640_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %M%A%P%C_%C22640_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %M%A%P%C_%C27600_%V1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %W%G%C22630_%V2
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %W%G%C40680_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %W%S1%A2639%P1_%V1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %W%S1%A3640%P1_%V1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %W%S1%A3940%P1_%V1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %W%S%G%P%A01_%V1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       └── symbol.oa
+│   │   ├── %W%S%T33%H0%N%C_%V4
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %W%S%T4050%D_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %W%S%T4100%D_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %W%S%T41%H0%D_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %W%S%T4200%D_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   ├── %W%S%T4300%D_v1
+│   │   │   └── symbol
+│   │   │       ├── master.tag
+│   │   │       ├── named.views
+│   │   │       └── symbol.oa
+│   │   └── %W%S%T4500%D_v1
+│   │       └── symbol
+│   │           ├── master.tag
+│   │           ├── named.views
+│   │           └── symbol.oa
+│   ├── MA_RFP_ADS_v1p8_tech
+│   └── veriloga
+│       └── 2.91.101
+│           ├── analog_files
+│           │   ├── lib.linux_x86_64
+│           │   │   └── lib_tmc.so
+│           │   └── lib.win64
+│           │       └── lib_tmc.dll
+│           └── work.db
+├── navigator.opt
+├── netlist.log
+├── pictures
+│   ├── AMAM_pick.pdf
+│   ├── AMAM_pick.svg
+│   ├── sim2longue.pdf
+│   ├── simlongue3.pdf
+│   ├── sim_minirmse_vuecomp.pdf
+│   ├── sim_min_rmse_focus.pdf
+│   └── simulation_signalmax_vucomp.pdf
+├── saved.wrkstate
+├── schematic.prf
+├── search_history.log
+├── SECOND_DPA_simwrk (VBoxSvr) (X) - Raccourci.lnk
+├── setup_dxf.opt
+├── simulation
+│   └── pdc_job
+│       ├── j0
+│       │   ├── ADSlibconfig
+│       │   ├── data
+│       │   ├── hpeesofsim.cfg
+│       │   ├── job.bat
+│       │   ├── job_submit_info.json
+│       │   ├── netlist.log
+│       │   └── sim_job.json
+│       └── jobsMap.json
+├── smal_signal_TB.dds
+├── smal_signal_TB.dds~
+├── structure_du_wrk_ads.txt
+└── workspace.ads
+
+305 directories, 605 files
